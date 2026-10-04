@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <!-- ============ SEO BASICO ============ -->
+    <title>Electricista Urgente en Monterrey | Técnico Electricista</title>
+    <meta name="description" content="Técnico electricista en Monterrey: fallas, tableros, medidores, plantas de emergencia e iluminación LED. Atención urgente por WhatsApp.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Técnico Electricista">
+    <meta name="theme-color" content="#0B0D10">
+    <meta name="color-scheme" content="dark">
+    <!-- TODO-CLIENTE: cuando exista el dominio, activar el canonical y usar URLs absolutas en og:image y twitter:image -->
+    <!-- <link rel="canonical" href="https://DOMINIO.com/"> -->
+
+    <!-- ============ OPEN GRAPH / TWITTER ============ -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Técnico Electricista">
+    <meta property="og:title" content="Electricista Urgente en Monterrey | Técnico Electricista">
+    <meta property="og:description" content="Fallas, tableros, medidores, plantas de emergencia e iluminación LED. Atención urgente por WhatsApp en Monterrey y área metropolitana.">
+    <meta property="og:image" content="img/web/og-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Técnico electricista midiendo corriente con pinza amperimétrica en un tablero de control">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Electricista Urgente en Monterrey | Técnico Electricista">
+    <meta name="twitter:description" content="Fallas, tableros, medidores, plantas de emergencia e iluminación LED. Atención urgente por WhatsApp.">
+    <meta name="twitter:image" content="img/web/og-cover.jpg">
+
+    <!-- Favicon: rayo sobre cuadro volt -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F0BE2E'/%3E%3Cpath d='M18 4 8 18h7l-1 10 10-14h-7z' fill='%230B0D10'/%3E%3C/svg%3E">
+
+    <!-- ============ RENDIMIENTO ============ -->
+    <link rel="preload" href="fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/geist-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="img/web/medicion-pinza-amperimetrica.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
+    <!-- Iconos Phosphor (version fija) -->
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Seguro anti-bloqueo: si el script principal falla, el preloader se oculta solo -->
+    <script>
+        document.documentElement.classList.add('js');
+        setTimeout(function () { document.documentElement.classList.add('preloader-timeout'); }, 7000);
+    </script>
+    <noscript><style>.preloader{display:none!important}</style></noscript>
+
+    <!-- ============ DATOS ESTRUCTURADOS ============ -->
+    <!-- TODO-CLIENTE: confirmar zona de servicio y agregar "url", horario y redes sociales cuando existan -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Electrician",
+        "name": "Técnico Electricista",
+        "description": "Técnico electricista en Monterrey para fallas e instalaciones eléctricas urgentes: medidores, tableros, plantas de emergencia e iluminación LED.",
+        "telephone": "+528126632376",
+        "image": "img/web/og-cover.jpg",
+        "areaServed": [
+            { "@type": "City", "name": "Monterrey" },
+            { "@type": "AdministrativeArea", "name": "Nuevo León" }
+        ],
+        "knowsAbout": ["Instalaciones eléctricas", "Reparación de fallas eléctricas", "Tableros eléctricos", "Medidores y acometidas", "Plantas de emergencia", "Iluminación LED"],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios eléctricos",
+            "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Atención de fallas y emergencias eléctricas" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Medidores y acometidas" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tableros e interruptores" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Conexión de plantas de emergencia" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Iluminación LED" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalaciones eléctricas industriales" } }
+            ]
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Atienden emergencias eléctricas?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Sí. Nos enfocamos en fallas e instalaciones eléctricas urgentes. Escríbenos por WhatsApp con el problema y una foto, y coordinamos la visita lo antes posible." }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué tipo de trabajos hacen?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Medidores y acometidas, tableros e interruptores, conexión de plantas de emergencia, iluminación LED e instalaciones en comercios y plantas industriales." }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto cuesta una reparación o instalación?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Depende del trabajo. Con una foto o un video del problema te damos un presupuesto claro antes de empezar." }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Trabajan en casas, comercios e industria?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Sí. Atendemos instalaciones de vivienda, comercio e industria, desde medidores y tableros hasta plantas de emergencia y naves industriales." }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué hago si hay chispas o huele a quemado?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Si puedes hacerlo con seguridad, baja el interruptor general, aléjate de la zona y no toques cables ni equipos mojados. Después escríbenos o llámanos." }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cómo solicito el servicio?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Por WhatsApp o por teléfono. Cuéntanos el problema, tu colonia y qué tan urgente es, y te respondemos con el diagnóstico inicial y la disponibilidad." }
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- Barra de progreso de scroll -->
+    <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+
+    <!-- ============ PRELOADER ============ -->
+    <div class="preloader" id="preloader" role="status" aria-live="polite" aria-label="Cargando el sitio">
+        <div class="preloader__shutter preloader__shutter--top"></div>
+        <div class="preloader__shutter preloader__shutter--bottom"></div>
+        <div class="preloader__core">
+            <div class="preloader__gauge">
+                <svg class="preloader__svg" viewBox="0 0 120 120" aria-hidden="true">
+                    <circle class="preloader__track" cx="60" cy="60" r="52"></circle>
+                    <circle class="preloader__arc" cx="60" cy="60" r="52"></circle>
+                </svg>
+                <span class="preloader__orbit" aria-hidden="true"></span>
+                <i class="ph-fill ph-lightning preloader__bolt" aria-hidden="true"></i>
+            </div>
+            <p class="preloader__count"><span id="preloader-count">0</span><small>%</small></p>
+            <p class="preloader__label">Energizando</p>
+        </div>
+    </div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header" id="site-header">
+        <div class="container site-header__bar">
+            <a class="brand" href="#inicio" aria-label="Técnico Electricista, ir al inicio">
+                <span class="brand__mark" aria-hidden="true"><i class="ph-fill ph-lightning"></i></span>
+                <span class="brand__text">
+                    <strong>Técnico Electricista</strong>
+                    <small>Instalaciones urgentes</small>
+                </span>
+            </a>
+
+            <nav class="site-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="#servicios" data-nav>Servicios</a></li>
+                    <li><a href="#trabajos" data-nav>Trabajos</a></li>
+                    <li><a href="#proceso" data-nav>Proceso</a></li>
+                    <li><a href="#cobertura" data-nav>Cobertura</a></li>
+                    <li><a href="#preguntas" data-nav>Preguntas</a></li>
+                </ul>
+            </nav>
+
+            <a class="btn btn--primary btn--sm site-header__cta" href="https://wa.me/528126632376?text=Hola%2C%20necesito%20un%20electricista.%20Les%20escribo%20desde%20su%20p%C3%A1gina%20web." target="_blank" rel="noopener noreferrer" data-magnetic>
+                <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>
+                Escribir por WhatsApp
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+                <span class="menu-toggle__bars" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu movil -->
+    <div class="mobile-menu" id="mobile-menu" inert>
+        <nav aria-label="Menú móvil">
+            <ul>
+                <li style="--i:0"><a href="#servicios">Servicios</a></li>
+                <li style="--i:1"><a href="#trabajos">Trabajos</a></li>
+                <li style="--i:2"><a href="#proceso">Proceso</a></li>
+                <li style="--i:3"><a href="#cobertura">Cobertura</a></li>
+                <li style="--i:4"><a href="#preguntas">Preguntas</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu__actions" style="--i:5">
+            <a class="btn btn--primary" href="https://wa.me/528126632376?text=Hola%2C%20necesito%20un%20electricista.%20Les%20escribo%20desde%20su%20p%C3%A1gina%20web." target="_blank" rel="noopener noreferrer">
+                <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>
+                Escribir por WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="tel:+528126632376">
+                <i class="ph ph-phone-call" aria-hidden="true"></i>
+                Llamar ahora
+            </a>
+        </div>
+    </div>
+
+    <main id="contenido">
+
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="hero__bg" aria-hidden="true"></div>
+            <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+            <div class="hero__flash" aria-hidden="true"></div>
+
+            <div class="container hero__grid">
+                <div class="hero__copy">
+                    <p class="eyebrow" data-hero-in>
+                        <i class="ph-fill ph-lightning" aria-hidden="true"></i>
+                        Monterrey y área metropolitana
+                    </p>
+
+                    <h1 class="hero__title" id="hero-title">
+                        <span class="line"><span class="line__in">Electricista urgente</span></span>
+                        <span class="line"><span class="line__in">para
+                            <span class="rot" id="rot">
+                                <span class="rot__w">tu hogar</span>
+                                <span class="rot__w">tu comercio</span>
+                                <span class="rot__w">tu planta</span>
+                            </span>
+                        </span></span>
+                    </h1>
+
+                    <p class="hero__sub" data-hero-in>
+                        Fallas, tableros, medidores e iluminación LED. Atención directa por WhatsApp para casas, comercios e industria.
+                    </p>
+
+                    <div class="hero__actions" data-hero-in>
+                        <a class="btn btn--primary btn--lg" href="https://wa.me/528126632376?text=Hola%2C%20necesito%20un%20electricista.%20Les%20escribo%20desde%20su%20p%C3%A1gina%20web." target="_blank" rel="noopener noreferrer" data-magnetic>
+                            <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>
+                            Escribir por WhatsApp
+                        </a>
+                        <a class="btn btn--ghost btn--lg" href="tel:+528126632376">
+                            <i class="ph ph-phone-call" aria-hidden="true"></i>
+                            Llamar ahora
+                        </a>
+                    </div>
+                </div>
+
+                <figure class="hero__figure" id="hero-figure">
+                    <div class="hero__frame">
+                        <img src="img/web/medicion-pinza-amperimetrica.webp" width="715" height="953"
+                             alt="Técnico electricista midiendo corriente con una pinza amperimétrica en un tablero de control industrial"
+                             fetchpriority="high" decoding="async">
+                        <span class="hero__scan" aria-hidden="true"></span>
+                    </div>
+                    <figcaption>Medición con pinza amperimétrica en tablero de control</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ============ TICKER (unico marquee de la pagina) ============ -->
+        <section class="ticker" aria-label="Servicios principales">
+            <div class="ticker__track">
+                <ul class="ticker__list">
+                    <li>Cortos circuitos</li>
+                    <li>Tableros eléctricos</li>
+                    <li>Medidores y acometidas</li>
+                    <li>Plantas de emergencia</li>
+                    <li>Iluminación LED</li>
+                    <li>Mediciones y diagnóstico</li>
+                    <li>Instalaciones industriales</li>
+                    <li>Trabajo en altura</li>
+                </ul>
+                <ul class="ticker__list" aria-hidden="true">
+                    <li>Cortos circuitos</li>
+                    <li>Tableros eléctricos</li>
+                    <li>Medidores y acometidas</li>
+                    <li>Plantas de emergencia</li>
+                    <li>Iluminación LED</li>
+                    <li>Mediciones y diagnóstico</li>
+                    <li>Instalaciones industriales</li>
+                    <li>Trabajo en altura</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ URGENCIAS / SINTOMAS ============ -->
+        <section class="section symptoms" id="urgencias" aria-labelledby="urgencias-title">
+            <div class="container symptoms__layout">
+                <div class="symptoms__intro">
+                    <h2 class="h2 split" id="urgencias-title">¿Qué está pasando en tu instalación?</h2>
+                    <p class="lead" data-reveal>Elige la que más se parezca y mándanos una foto por WhatsApp. Así llegamos con el diagnóstico más claro.</p>
+                    <a class="btn btn--ghost" href="tel:+528126632376" data-reveal>
+                        <i class="ph ph-phone-call" aria-hidden="true"></i>
+                        Llamar ahora
+                    </a>
+                </div>
+
+                <ul class="symptoms__grid">
+                    <li>
+                        <a class="symptom tile" data-spot data-reveal data-wa-text="Hola, se fue la luz en una parte de mi instalación y necesito ayuda urgente." href="https://wa.me/528126632376" target="_blank" rel="noopener noreferrer">
+                            <span class="symptom__icon" aria-hidden="true"><i class="ph ph-lightning-slash"></i></span>
+                            <span class="symptom__title">Se fue la luz en una parte</span>
+                            <span class="symptom__text">Zonas sin energía, circuitos caídos o fases perdidas.</span>
+                            <i class="ph ph-arrow-up-right symptom__go" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="symptom tile" data-spot data-reveal data-wa-text="Hola, se me botan los interruptores (pastillas) y necesito que lo revisen." href="https://wa.me/528126632376" target="_blank" rel="noopener noreferrer">
+                            <span class="symptom__icon" aria-hidden="true"><i class="ph ph-toggle-left"></i></span>
+                            <span class="symptom__title">Se botan los interruptores</span>
+                            <span class="symptom__text">La pastilla se dispara una y otra vez al encender equipos.</span>
+                            <i class="ph ph-arrow-up-right symptom__go" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="symptom tile" data-spot data-reveal data-wa-text="Hola, tengo chispazos u olor a quemado en mi instalación eléctrica. Es urgente." href="https://wa.me/528126632376" target="_blank" rel="noopener noreferrer">
+                            <span class="symptom__icon" aria-hidden="true"><i class="ph ph-fire"></i></span>
+                            <span class="symptom__title">Chispazos u olor a quemado</span>
+                            <span class="symptom__text">Aléjate de la zona y escríbenos. Lo revisamos con seguridad.</span>
+                            <i class="ph ph-arrow-up-right symptom__go" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="symptom tile" data-spot data-reveal data-wa-text="Hola, mi medidor o su base está dañado o sin servicio y necesito ayuda." href="https://wa.me/528126632376" target="_blank" rel="noopener noreferrer">
+                            <span class="symptom__icon" aria-hidden="true"><i class="ph ph-gauge"></i></span>
+                            <span class="symptom__title">Medidor dañado o sin servicio</span>
+                            <span class="symptom__text">Bases, acometidas y conexiones en mal estado.</span>
+                            <i class="ph ph-arrow-up-right symptom__go" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="symptom tile" data-spot data-reveal data-wa-text="Hola, mi planta de emergencia no entra y necesito apoyo urgente." href="https://wa.me/528126632376" target="_blank" rel="noopener noreferrer">
+                            <span class="symptom__icon" aria-hidden="true"><i class="ph ph-engine"></i></span>
+                            <span class="symptom__title">La planta de emergencia no entra</span>
+                            <span class="symptom__text">Fallas de conexión y tableros de la planta.</span>
+                            <i class="ph ph-arrow-up-right symptom__go" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="symptom tile" data-spot data-reveal data-wa-text="Hola, tengo lámparas que parpadean o no encienden y quiero una revisión." href="https://wa.me/528126632376" target="_blank" rel="noopener noreferrer">
+                            <span class="symptom__icon" aria-hidden="true"><i class="ph ph-lightbulb-filament"></i></span>
+                            <span class="symptom__title">Lámparas que parpadean</span>
+                            <span class="symptom__text">Luminarias, drivers y circuitos de iluminación.</span>
+                            <i class="ph ph-arrow-up-right symptom__go" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ SERVICIOS (BENTO) ============ -->
+        <section class="section services" id="servicios" aria-labelledby="servicios-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="eyebrow" data-reveal><i class="ph-fill ph-lightning" aria-hidden="true"></i>Servicios</p>
+                    <h2 class="h2 split" id="servicios-title">Todo lo eléctrico, resuelto en sitio.</h2>
+                    <p class="lead" data-reveal>Instalación, reparación y mantenimiento para vivienda, comercio e industria.</p>
+                </header>
+
+                <div class="bento">
+                    <article class="tile bento__a" data-spot data-reveal>
+                        <figure class="tile__media">
+                            <img src="img/web/medidor-base-conexion.webp" width="788" height="1400" loading="lazy" decoding="async"
+                                 alt="Base de medidor eléctrico abierta en una pared exterior, con terminales y cables conectados" style="object-position:50% 52%">
+                        </figure>
+                        <div class="tile__body">
+                            <h3>Medidores y acometidas</h3>
+                            <p>Revisión de bases, conexión de terminales y reparación de la acometida cuando hay daño o falta de servicio.</p>
+                        </div>
+                    </article>
+
+                    <article class="tile tile--urgent bento__b" data-reveal>
+                        <span class="tile--urgent__beam" aria-hidden="true"></span>
+                        <div class="tile--urgent__icon" aria-hidden="true"><i class="ph-fill ph-siren"></i></div>
+                        <div class="tile__body">
+                            <h3>Fallas y emergencias</h3>
+                            <p>Cortos circuitos, apagones parciales y equipos sin energía. Cuéntanos tu caso y lo atendemos con prioridad.</p>
+                            <a class="btn btn--dark" href="https://wa.me/528126632376?text=Hola%2C%20tengo%20una%20falla%20el%C3%A9ctrica%20urgente." target="_blank" rel="noopener noreferrer">
+                                <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>
+                                Escribir por WhatsApp
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="tile bento__c" data-spot data-reveal>
+                        <figure class="tile__media">
+                            <img src="img/web/tablero-principal-interruptor.webp" width="540" height="720" loading="lazy" decoding="async"
+                                 alt="Técnico conectando cableado en un tablero eléctrico principal con interruptor de caja moldeada" style="object-position:50% 24%">
+                        </figure>
+                        <div class="tile__body">
+                            <h3>Tableros e interruptores</h3>
+                            <p>Instalación, ampliación y mantenimiento de tableros e interruptores termomagnéticos.</p>
+                        </div>
+                    </article>
+
+                    <article class="tile bento__d" data-spot data-reveal>
+                        <figure class="tile__media">
+                            <img src="img/web/planta-emergencia-conexion.webp" width="1050" height="1400" loading="lazy" decoding="async"
+                                 alt="Técnico revisando las conexiones del tablero de control de una planta de emergencia" style="object-position:50% 38%">
+                        </figure>
+                        <div class="tile__body">
+                            <h3>Plantas de emergencia</h3>
+                            <p>Conexión y revisión de la planta con la instalación del inmueble, para que entre cuando la necesitas.</p>
+                        </div>
+                    </article>
+
+                    <article class="tile bento__e" data-spot data-reveal>
+                        <figure class="tile__media">
+                            <img src="img/web/luminaria-led-industrial.webp" width="1050" height="1400" loading="lazy" decoding="async"
+                                 alt="Técnico instalando una luminaria LED tipo campana en una nave industrial" style="object-position:50% 36%">
+                        </figure>
+                        <div class="tile__body">
+                            <h3>Iluminación LED</h3>
+                            <p>Luminarias industriales, de oficina y comercio, con instalación en altura.</p>
+                        </div>
+                    </article>
+
+                    <article class="tile bento__f" data-spot data-reveal>
+                        <figure class="tile__media">
+                            <img src="img/web/pantalla-industrial-instalacion.webp" width="1050" height="1400" loading="lazy" decoding="async"
+                                 alt="Técnico sobre una escalera instalando una pantalla industrial con marco de acero inoxidable" style="object-position:50% 58%">
+                        </figure>
+                        <div class="tile__body">
+                            <h3>Instalaciones industriales</h3>
+                            <p>Equipos, pantallas, gabinetes y conexiones en plantas y naves, con trabajo en altura.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PROCESO ============ -->
+        <section class="section process" id="proceso" aria-labelledby="proceso-title">
+            <div class="container">
+                <header class="section-head section-head--center">
+                    <h2 class="h2 split" id="proceso-title">Así trabajamos</h2>
+                    <p class="lead" data-reveal>Un proceso corto para que el problema se resuelva sin vueltas.</p>
+                </header>
+
+                <ol class="timeline" id="timeline">
+                    <li class="timeline__item">
+                        <span class="timeline__node" aria-hidden="true"><i class="ph ph-chat-circle-text"></i></span>
+                        <div class="timeline__body" data-reveal>
+                            <h3>Nos escribes</h3>
+                            <p>Cuéntanos qué pasa por WhatsApp. Una foto o un video del tablero, el medidor o la luminaria ayuda mucho.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item">
+                        <span class="timeline__node" aria-hidden="true"><i class="ph ph-gauge"></i></span>
+                        <div class="timeline__body" data-reveal>
+                            <h3>Diagnosticamos</h3>
+                            <p>Revisamos la instalación y medimos con pinza amperimétrica antes de intervenir cualquier conexión.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item">
+                        <span class="timeline__node" aria-hidden="true"><i class="ph ph-clipboard-text"></i></span>
+                        <div class="timeline__body" data-reveal>
+                            <h3>Te damos el presupuesto</h3>
+                            <p>Te explicamos qué falla, qué se necesita y cuánto cuesta, antes de empezar el trabajo.</p>
+                        </div>
+                    </li>
+                    <li class="timeline__item">
+                        <span class="timeline__node" aria-hidden="true"><i class="ph ph-check-circle"></i></span>
+                        <div class="timeline__body" data-reveal>
+                            <h3>Resolvemos y probamos</h3>
+                            <p>Hacemos el trabajo con equipo de protección y verificamos que todo quede operando.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ TRABAJOS REALES (galeria horizontal con pin) ============ -->
+        <section class="works" id="trabajos" aria-labelledby="trabajos-title">
+            <div class="works__pin">
+                <div class="container works__head">
+                    <h2 class="h2 split" id="trabajos-title">Trabajos reales, en sitio.</h2>
+                    <p class="lead" data-reveal>Fotos de tableros, medidores, plantas e iluminación. Toca una imagen para verla completa.</p>
+                </div>
+
+                <ul class="works__track" id="works-track">
+                    <li class="work">
+                        <button class="work__btn" type="button" data-lightbox data-full="img/web/tablero-principal-interruptor.webp" data-caption="Interconexión en tablero principal" aria-label="Ampliar foto: interconexión en tablero principal">
+                            <img src="img/web/tablero-principal-interruptor.webp" width="540" height="720" loading="lazy" decoding="async" alt="Técnico conectando cableado en un tablero eléctrico principal con interruptor de caja moldeada">
+                        </button>
+                        <p class="work__cap">Interconexión en tablero principal</p>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-lightbox data-full="img/web/planta-emergencia-conexion.webp" data-caption="Conexión en planta de emergencia" aria-label="Ampliar foto: conexión en planta de emergencia">
+                            <img src="img/web/planta-emergencia-conexion.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Técnico revisando las conexiones del tablero de control de una planta de emergencia">
+                        </button>
+                        <p class="work__cap">Conexión en planta de emergencia</p>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-lightbox data-full="img/web/luminaria-led-industrial.webp" data-caption="Luminaria LED industrial en nave" aria-label="Ampliar foto: luminaria LED industrial en nave">
+                            <img src="img/web/luminaria-led-industrial.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Técnico instalando una luminaria LED tipo campana en una nave industrial">
+                        </button>
+                        <p class="work__cap">Luminaria LED industrial en nave</p>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-lightbox data-full="img/web/iluminacion-led-plafon.webp" data-caption="Iluminación LED en plafón comercial" aria-label="Ampliar foto: iluminación LED en plafón comercial">
+                            <img src="img/web/iluminacion-led-plafon.webp" width="1400" height="1050" loading="lazy" decoding="async" alt="Luminarias LED empotradas en el plafón de un comercio">
+                        </button>
+                        <p class="work__cap">Iluminación LED en plafón comercial</p>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-lightbox data-full="img/web/medidor-base-conexion.webp" data-caption="Revisión de base de medidor y terminales" aria-label="Ampliar foto: revisión de base de medidor">
+                            <img src="img/web/medidor-base-conexion.webp" width="788" height="1400" loading="lazy" decoding="async" alt="Base de medidor eléctrico abierta en una pared exterior, con terminales y cables conectados">
+                        </button>
+                        <p class="work__cap">Revisión de base de medidor y terminales</p>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-lightbox data-full="img/web/gabinetes-interruptor-exterior.webp" data-caption="Interruptor termomagnético en gabinete exterior" aria-label="Ampliar foto: interruptor en gabinete exterior">
+                            <img src="img/web/gabinetes-interruptor-exterior.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Técnico conectando un interruptor termomagnético en gabinetes eléctricos exteriores">
+                        </button>
+                        <p class="work__cap">Interruptor termomagnético en gabinete exterior</p>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-lightbox data-full="img/web/pantalla-industrial-instalacion.webp" data-caption="Instalación de pantalla industrial en altura" aria-label="Ampliar foto: instalación de pantalla industrial">
+                            <img src="img/web/pantalla-industrial-instalacion.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Técnico sobre una escalera instalando una pantalla industrial con marco de acero inoxidable">
+                        </button>
+                        <p class="work__cap">Instalación de pantalla industrial en altura</p>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-lightbox data-full="img/web/barras-gabinete-medidores.webp" data-caption="Barras de gabinete de medición" aria-label="Ampliar foto: barras de gabinete de medición">
+                            <img src="img/web/barras-gabinete-medidores.webp" width="715" height="715" loading="lazy" decoding="async" alt="Técnico conectando las barras de un gabinete de medición junto a bases de medidores">
+                        </button>
+                        <p class="work__cap">Barras de gabinete de medición</p>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-lightbox data-full="img/web/medicion-pinza-amperimetrica.webp" data-caption="Medición con pinza amperimétrica" aria-label="Ampliar foto: medición con pinza amperimétrica">
+                            <img src="img/web/medicion-pinza-amperimetrica.webp" width="715" height="953" loading="lazy" decoding="async" alt="Técnico electricista midiendo corriente con una pinza amperimétrica en un tablero de control industrial">
+                        </button>
+                        <p class="work__cap">Medición con pinza amperimétrica</p>
+                    </li>
+                    <li class="work">
+                        <button class="work__btn" type="button" data-lightbox data-full="img/web/trabajo-planta-industrial.webp" data-caption="Conexión eléctrica en planta industrial" aria-label="Ampliar foto: conexión eléctrica en planta industrial">
+                            <img src="img/web/trabajo-planta-industrial.webp" width="715" height="958" loading="lazy" decoding="async" alt="Técnico con casco y arnés realizando una conexión eléctrica en una planta industrial">
+                        </button>
+                        <p class="work__cap">Conexión eléctrica en planta industrial</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ SEGURIDAD ============ -->
+        <section class="section pillars" id="seguridad" aria-labelledby="seguridad-title">
+            <div class="container pillars__layout">
+                <div class="pillars__copy">
+                    <p class="eyebrow" data-reveal><i class="ph-fill ph-lightning" aria-hidden="true"></i>Seguridad</p>
+                    <h2 class="h2 split" id="seguridad-title">Urgente no significa improvisado.</h2>
+                    <p class="lead" data-reveal>Cada trabajo se hace con protocolo, aunque el tiempo apriete.</p>
+
+                    <ul class="pillars__list">
+                        <li data-reveal>
+                            <span class="pillar__icon" aria-hidden="true"><i class="ph ph-hard-hat"></i></span>
+                            <h3>Equipo de protección</h3>
+                            <p>Casco, guantes, lentes y chaleco según el tipo de trabajo.</p>
+                        </li>
+                        <li data-reveal>
+                            <span class="pillar__icon" aria-hidden="true"><i class="ph ph-gauge"></i></span>
+                            <h3>Medición primero</h3>
+                            <p>Pinza amperimétrica y verificación antes de tocar las conexiones.</p>
+                        </li>
+                        <li data-reveal>
+                            <span class="pillar__icon" aria-hidden="true"><i class="ph ph-ladder-simple"></i></span>
+                            <h3>Trabajo en altura</h3>
+                            <p>Escalera, arnés y apoyo seguro para luminarias, pantallas y gabinetes.</p>
+                        </li>
+                        <li data-reveal>
+                            <span class="pillar__icon" aria-hidden="true"><i class="ph ph-plugs-connected"></i></span>
+                            <h3>Conexiones ordenadas</h3>
+                            <p>Terminales firmes, cables identificados y tablero cerrado al terminar.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <figure class="pillars__figure" data-reveal>
+                    <div class="pillars__frame">
+                        <img src="img/web/trabajo-planta-industrial.webp" width="715" height="958" loading="lazy" decoding="async"
+                             alt="Técnico con casco y arnés realizando una conexión eléctrica en una planta industrial" data-parallax>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ============ COBERTURA ============ -->
+        <section class="coverage" id="cobertura" aria-labelledby="cobertura-title">
+            <div class="coverage__map">
+                <iframe title="Mapa de Monterrey y área metropolitana, Nuevo León"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-100.52%2C25.52%2C-100.12%2C25.84&amp;layer=mapnik"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <span class="coverage__sweep" aria-hidden="true"></span>
+            </div>
+            <div class="container coverage__wrap">
+                <div class="coverage__panel" data-reveal>
+                    <h2 class="h2 h2--sm" id="cobertura-title">Cobertura en Monterrey y su zona metropolitana</h2>
+                    <p class="lead">Escríbenos tu colonia y confirmamos disponibilidad. Para trabajos industriales coordinamos la visita en tu planta.</p>
+                    <!-- TODO-CLIENTE: confirmar los municipios que realmente atiende -->
+                    <ul class="chips" aria-label="Municipios de la zona metropolitana">
+                        <li>Monterrey</li>
+                        <li>San Pedro Garza García</li>
+                        <li>San Nicolás de los Garza</li>
+                        <li>Guadalupe</li>
+                        <li>Apodaca</li>
+                        <li>General Escobedo</li>
+                        <li>Santa Catarina</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FAQ ============ -->
+        <section class="section faq" id="preguntas" aria-labelledby="preguntas-title">
+            <div class="container container--narrow">
+                <header class="section-head section-head--center">
+                    <h2 class="h2 split" id="preguntas-title">Preguntas frecuentes</h2>
+                </header>
+
+                <div class="faq__list">
+                    <details class="faq__item" data-reveal>
+                        <summary><span>¿Atienden emergencias eléctricas?</span><i class="ph ph-plus" aria-hidden="true"></i></summary>
+                        <div class="faq__a"><p>Sí. Nos enfocamos en fallas e instalaciones eléctricas urgentes. Escríbenos por WhatsApp con el problema y una foto, y coordinamos la visita lo antes posible.</p></div>
+                    </details>
+                    <details class="faq__item" data-reveal>
+                        <summary><span>¿Qué tipo de trabajos hacen?</span><i class="ph ph-plus" aria-hidden="true"></i></summary>
+                        <div class="faq__a"><p>Medidores y acometidas, tableros e interruptores, conexión de plantas de emergencia, iluminación LED e instalaciones en comercios y plantas industriales.</p></div>
+                    </details>
+                    <details class="faq__item" data-reveal>
+                        <summary><span>¿Cuánto cuesta una reparación o instalación?</span><i class="ph ph-plus" aria-hidden="true"></i></summary>
+                        <div class="faq__a"><p>Depende del trabajo. Con una foto o un video del problema te damos un presupuesto claro antes de empezar.</p></div>
+                    </details>
+                    <details class="faq__item" data-reveal>
+                        <summary><span>¿Trabajan en casas, comercios e industria?</span><i class="ph ph-plus" aria-hidden="true"></i></summary>
+                        <div class="faq__a"><p>Sí. Atendemos instalaciones de vivienda, comercio e industria, desde medidores y tableros hasta plantas de emergencia y naves industriales.</p></div>
+                    </details>
+                    <details class="faq__item" data-reveal>
+                        <summary><span>¿Qué hago si hay chispas o huele a quemado?</span><i class="ph ph-plus" aria-hidden="true"></i></summary>
+                        <div class="faq__a"><p>Si puedes hacerlo con seguridad, baja el interruptor general, aléjate de la zona y no toques cables ni equipos mojados. Después escríbenos o llámanos.</p></div>
+                    </details>
+                    <details class="faq__item" data-reveal>
+                        <summary><span>¿Cómo solicito el servicio?</span><i class="ph ph-plus" aria-hidden="true"></i></summary>
+                        <div class="faq__a"><p>Por WhatsApp o por teléfono. Cuéntanos el problema, tu colonia y qué tan urgente es, y te respondemos con el diagnóstico inicial y la disponibilidad.</p></div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACTO ============ -->
+        <section class="section contact" id="contacto" aria-labelledby="contacto-title">
+            <div class="container">
+                <div class="contact__card">
+                    <div class="contact__info">
+                        <p class="eyebrow" data-reveal><i class="ph-fill ph-lightning" aria-hidden="true"></i>Contacto</p>
+                        <h2 class="h2 h2--md split" id="contacto-title">Cuéntanos qué pasa y te respondemos por WhatsApp.</h2>
+                        <p class="lead" data-reveal>Llena el formulario y abrimos tu chat con el mensaje listo. También puedes llamar directo.</p>
+
+                        <ul class="contact__list" data-reveal>
+                            <li>
+                                <span class="contact__icon" aria-hidden="true"><i class="ph ph-phone-call"></i></span>
+                                <div>
+                                    <span class="contact__label">Llamadas y WhatsApp</span>
+                                    <a href="tel:+528126632376">81 2663 2376</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="contact__icon" aria-hidden="true"><i class="ph ph-map-pin"></i></span>
+                                <div>
+                                    <span class="contact__label">Zona de servicio</span>
+                                    <p>Monterrey y área metropolitana, Nuevo León</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="contact__form" id="wa-form" novalidate data-wa-number="528126632376">
+                        <div class="field">
+                            <label for="f-nombre">Tu nombre</label>
+                            <input type="text" id="f-nombre" name="nombre" autocomplete="name" required aria-describedby="f-nombre-err" placeholder="Ej. Carlos Treviño">
+                            <p class="field__err" id="f-nombre-err" role="alert"></p>
+                        </div>
+
+                        <div class="field">
+                            <label for="f-servicio">¿Qué necesitas?</label>
+                            <div class="select">
+                                <select id="f-servicio" name="servicio" required aria-describedby="f-servicio-err">
+                                    <option value="" selected disabled>Selecciona una opción</option>
+                                    <option>Falla o emergencia eléctrica</option>
+                                    <option>Medidor o acometida</option>
+                                    <option>Tablero o interruptores</option>
+                                    <option>Planta de emergencia</option>
+                                    <option>Iluminación LED</option>
+                                    <option>Instalación industrial</option>
+                                    <option>Otro trabajo eléctrico</option>
+                                </select>
+                                <i class="ph ph-caret-down" aria-hidden="true"></i>
+                            </div>
+                            <p class="field__err" id="f-servicio-err" role="alert"></p>
+                        </div>
+
+                        <fieldset class="field field--urgency">
+                            <legend>¿Qué tan urgente es?</legend>
+                            <div class="seg">
+                                <label class="seg__opt"><input type="radio" name="urgencia" value="Ahora mismo"><span>Ahora mismo</span></label>
+                                <label class="seg__opt"><input type="radio" name="urgencia" value="Hoy" checked><span>Hoy</span></label>
+                                <label class="seg__opt"><input type="radio" name="urgencia" value="Esta semana"><span>Esta semana</span></label>
+                            </div>
+                        </fieldset>
+
+                        <div class="field">
+                            <label for="f-zona">Colonia o municipio</label>
+                            <input type="text" id="f-zona" name="zona" autocomplete="address-level2" required aria-describedby="f-zona-err" placeholder="Ej. Cumbres, Monterrey">
+                            <p class="field__err" id="f-zona-err" role="alert"></p>
+                        </div>
+
+                        <div class="field">
+                            <label for="f-detalles">Detalles <span class="field__opt">(opcional)</span></label>
+                            <textarea id="f-detalles" name="detalles" rows="3" placeholder="Cuéntanos qué pasó o qué quieres instalar"></textarea>
+                        </div>
+
+                        <button class="btn btn--primary btn--lg btn--block" type="submit" data-magnetic>
+                            <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>
+                            Escribir por WhatsApp
+                        </button>
+                        <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__top">
+                <div class="site-footer__brand">
+                    <a class="brand" href="#inicio" aria-label="Técnico Electricista, volver al inicio">
+                        <span class="brand__mark" aria-hidden="true"><i class="ph-fill ph-lightning"></i></span>
+                        <span class="brand__text">
+                            <strong>Técnico Electricista</strong>
+                            <small>Instalaciones urgentes</small>
+                        </span>
+                    </a>
+                    <p>Fallas e instalaciones eléctricas urgentes para casas, comercios e industria en Monterrey y su área metropolitana.</p>
+                </div>
+
+                <nav class="site-footer__nav" aria-label="Pie de página">
+                    <h2>Secciones</h2>
+                    <ul>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#trabajos">Trabajos</a></li>
+                        <li><a href="#proceso">Proceso</a></li>
+                        <li><a href="#cobertura">Cobertura</a></li>
+                        <li><a href="#preguntas">Preguntas</a></li>
+                    </ul>
+                </nav>
+
+                <div class="site-footer__contact">
+                    <h2>Contacto</h2>
+                    <address>
+                        <a href="tel:+528126632376"><i class="ph ph-phone-call" aria-hidden="true"></i>81 2663 2376</a>
+                        <a href="https://wa.me/528126632376?text=Hola%2C%20necesito%20un%20electricista.%20Les%20escribo%20desde%20su%20p%C3%A1gina%20web." target="_blank" rel="noopener noreferrer"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i>WhatsApp</a>
+                        <span><i class="ph ph-map-pin" aria-hidden="true"></i>Monterrey y área metropolitana</span>
+                    </address>
+                </div>
+            </div>
+
+            <div class="site-footer__bottom">
+                <p>&copy; 2026 Técnico Electricista. Todos los derechos reservados.</p>
+                <a href="#inicio" class="to-top">Volver arriba <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Boton flotante de WhatsApp -->
+    <a class="fab" href="https://wa.me/528126632376?text=Hola%2C%20necesito%20un%20electricista.%20Les%20escribo%20desde%20su%20p%C3%A1gina%20web." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+        <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>
+        <span class="fab__tip" aria-hidden="true">Escribir por WhatsApp</span>
+    </a>
+
+    <!-- Visor de fotos -->
+    <dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+        <button class="lightbox__close" type="button" aria-label="Cerrar foto"><i class="ph ph-x" aria-hidden="true"></i></button>
+        <figure>
+            <img src="" alt="" id="lightbox-img">
+            <figcaption id="lightbox-cap"></figcaption>
+        </figure>
+    </dialog>
+
+    <!-- Librerias (con fallback: el sitio funciona aunque no carguen) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
